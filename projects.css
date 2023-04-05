@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif; /* Added futuristic font */
+    color: #cfd8dc; /* Light gray for text */
+    background-color: #263238; /* Dark gray for background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Add navigation menu styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #37474f; /* Slightly lighter background for nav */
+    padding: 1rem 2rem;
+}
+
+nav .logo a {
+    color: #80deea; /* Futuristic color for logo */
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links li {
+    margin-left: 2rem;
+}
+
+nav .nav-links li a {
+    color: #cfd8dc; /* Light gray for nav links */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav .nav-links li a:hover {
+    text-decoration: underline;
+    color: #80deea; /* Futuristic color on hover */
+}
+
+header {
+    background-color: #263238;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.header-wrapper {
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-text {
+    text-align: left;
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #80deea; /* Futuristic color border around profile image */
+}
+
+.about-me {
+    background-color: #37474f; /* Slightly lighter background for project cards */
+    padding: 2rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    margin: 2rem; /* Space around the section */
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #80deea;
+    text-transform: uppercase;
+}
+
+.about-me ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px; /* Limit the width of the list */
+}
+
+.about-me li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separator line */
+}
+
+.about-me li:last-child {
+    border-bottom: none; /* Remove the line for the last item */
+}
+
+.about-me p {
+    color: #cfd8dc;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+.projects {
+    padding: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.3fr));
+    grid-template-rows: auto auto min-content;
+    gap: 3rem;
+    
+}
+
+.project {
+    background-color: #37474f; /* Slightly lighter background for project cards */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    justify-content: center;
+}
+
+/* Add these styles to your projects.css file */
+.project-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h2{
+    font-size: 2rem;
+    color: #80deea; /* Futuristic color for headers */
+    text-align: center;
+}
+
+h3{
+    color: #80deea; /* Futuristic color for headers */
+    text-align: center;
+}
+
+a {
+    color: #80deea; /* Futuristic color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cfd8dc; /* Light gray on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
